@@ -14,11 +14,14 @@ Created on Thu Jan 31 21:48:52 2019
 from flask import Flask
 app = Flask(__name__) #create an instance of an app 
 
-@app.route('/') #the function below is mapped to the home url (localhost:5000)
+@app.route("/hi")
 def hello():
-    return "Hello there!"
+    return "Hello World!"
 
 
-#Python assigns the name "__main__" to the script when the script is executed.
-if __name__=='__main__': # this condition is satisfied when we run this script
-   app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True) #app will being run if we run from app.py.
+    
+#build simple restful api with flask and SQLite that have capabilities to create, read, update, and delete data from database.
+    
+    
